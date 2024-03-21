@@ -67,6 +67,7 @@
     on meal_cost$.meal = hotels.meal;
 
 <h1><b>Power BI:</b></h1>
+
 # import SQL Server with sql query above^
 
 # create new column named Revenue
