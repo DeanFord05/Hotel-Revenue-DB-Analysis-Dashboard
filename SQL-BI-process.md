@@ -11,6 +11,7 @@
     select * from dbo.['2020$']);
 
 <h1><b>Questions To Answer:</b></h1>
+
 # Do the Hotels gain Revenue Every Year? 
     select arrival_date_year, ROUND(SUM((stays_in_week_nights+stays_in_weekend_nights)*adr), 2) as revenue 
     from hotels
