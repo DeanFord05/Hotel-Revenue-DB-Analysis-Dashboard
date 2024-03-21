@@ -1,4 +1,4 @@
-SQL:
+<h1><b>MS SQL Server:</b></h1>
 # Create database in MS SQL Server and upload MS Excel sheet.
 
 # Combining all sale years into one table for Exploratory Data Analysis
@@ -9,7 +9,7 @@ SQL:
     union
     select * from dbo.['2020$']);
 
-Questions to Answer:
+<h1><b>Questions To Answer:</b></h1>
 # Do the Hotels gain Revenue Every Year?
     select arrival_date_year, ROUND(SUM((stays_in_week_nights+stays_in_weekend_nights)*adr), 2) as revenue 
     from hotels
@@ -48,7 +48,7 @@ Questions to Answer:
 
 --> Room type A was the most popular and also had the highest revenue with 185k total nights and $17.5m in revenue
 
-Preping for dashboarding:
+<h1><b>Preping for dashboarding:</b></h1>
 # combining all tables for dashboarding
     with hotels as (
     select * from dbo.['2018$']
@@ -63,7 +63,7 @@ Preping for dashboarding:
     left join dbo.meal_cost$
     on meal_cost$.meal = hotels.meal;
 
-Power BI:
+<h1><b>Power BI:</b></h1>
 # import SQL Server with sql query above^
 
 # create new column named Revenue
