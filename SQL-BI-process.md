@@ -51,6 +51,7 @@
 --> Room type A was the most popular and also had the highest revenue with 185k total nights and $17.5m in revenue
 
 <h1><b>Preping for dashboarding:</b></h1>
+
 # combining all tables for dashboarding
     with hotels as (
     select * from dbo.['2018$']
