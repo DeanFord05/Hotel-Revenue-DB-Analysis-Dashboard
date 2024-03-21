@@ -52,7 +52,7 @@
 
 <h1><b>Preping for dashboarding:</b></h1>
 
-# combining all tables for dashboarding
+# Combining all tables for dashboarding
     with hotels as (
     select * from dbo.['2018$']
     union
@@ -70,7 +70,7 @@
 
 # import SQL Server with sql query above^
 
-# create new column named Revenue
+# Create new column named Revenue
     Formula: =([stays_in_week_nights]+[stays_in_weekend_nights])*([adr]-([adr]*[Discount]))
 
 # Total Nights Visual
